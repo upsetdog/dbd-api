@@ -21,8 +21,8 @@ app.get("/api/perks", (req, res) => {
   var rating = params.get("rating");
   if (rating != null) return res.send(handleRating(rating));
 
-  var query = params.get("perk");
-  if (query != null) return res.send(handleQuery(query));
+  var perk = params.get("perk");
+  if (perk != null) return res.send(handleQuery(perk));
 
   var character = params.get("character");
   if (character != null) return res.send(handleCharacter(character));
@@ -47,28 +47,10 @@ function handleRating(rating) {
       error: `invalid rating given, valid options are: ${keys.join(", ")}`,
     };
 
-  var results = perks.filter((perk) => {
-    return (
+  return perks.filter(
+    (perk) =>
       perk.rating >= ratingMap[rating][0] && perk.rating < ratingMap[rating][1]
-    );
-  });
-
-  if (results.length == 0) return [];
-  return results;
-}
-
-function handleCharacter(character) {
-  character = character.toLowerCase().replace(/[^a-z]/g, "");
-
-  if (character.length == 0) return { error: "character must not be empty" };
-  if (character.length < 3 || character.length > 20)
-    return { error: "character must be between 3 and 20 chars long" };
-
-  var results = perks.filter(
-    (p) => p.name.toLowerCase().indexOf(character) > -1
   );
-
-  return results;
 }
 
 function handleQuery(query) {
@@ -78,11 +60,23 @@ function handleQuery(query) {
   if (query.length < 3 || query.length > 20)
     return { error: "query must be between 3 and 20 chars long" };
 
-  var results = perks.filter(
-    (p) => p.perk_name.toLowerCase().indexOf(query) > -1
+  return perks.filter(
+    (p) =>
+      p.perk_name
+        .toLowerCase()
+        .replace(/[^a-z]/g, "")
+        .indexOf(query) > -1
   );
+}
 
-  return results;
+function handleCharacter(character) {
+  character = character.toLowerCase().replace(/[^a-z]/g, "");
+
+  if (character.length == 0) return { error: "character must not be empty" };
+  if (character.length < 3 || character.length > 20)
+    return { error: "character must be between 3 and 20 chars long" };
+
+  return perks.filter((p) => p.name.toLowerCase().indexOf(character) > -1);
 }
 
 app.listen(port, () => {
