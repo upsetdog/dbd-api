@@ -30,6 +30,10 @@ app.get("/api/perks", (req, res) => {
   return res.json(perks);
 });
 
+app.get("*", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
 var ratingMap = {
   S: [4.5, 5.1],
   A: [4, 4.5],
