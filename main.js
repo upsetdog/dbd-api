@@ -1,0 +1,90 @@
+// -----------------------------------------------------------------------------------------------------------
+// | METHOD | ENDPOINT                           | DESCRIPTION                                               |
+// -----------------------------------------------------------------------------------------------------------
+// | GET    | /api/perks                         | Returns with all perks                                    |
+// | GET    | /api/perks?rating=[S/A/B/C/D]      | Returns with all perks for the specified Tier Rating      |
+// | GET    | /api/perks?perk=[perk name]        | Returns with an array of perks that match the given perk  |
+// | GET    | /api/perks?character=[name]        | Returns with all perks for a given survivor/killer        |
+// -----------------------------------------------------------------------------------------------------------
+
+const express = require("express");
+
+const app = express();
+const port = 80;
+
+const perks = require("./perks.json");
+
+app.get("/api/perks", (req, res) => {
+  var url = new URL("http://localhost" + req.url);
+  var params = url.searchParams;
+
+  var rating = params.get("rating");
+  if (rating != null) return res.send(handleRating(rating));
+
+  var query = params.get("perk");
+  if (query != null) return res.send(handleQuery(query));
+
+  var character = params.get("character");
+  if (character != null) return res.send(handleCharacter(character));
+
+  return res.json(perks);
+});
+
+var ratingMap = {
+  S: [4.5, 5.1],
+  A: [4, 4.5],
+  B: [3, 4],
+  C: [2.1, 3],
+  D: [0, 2.1],
+};
+
+function handleRating(rating) {
+  var keys = Object.keys(ratingMap);
+  rating = rating.toUpperCase();
+
+  if (!keys.includes(rating))
+    return {
+      error: `invalid rating given, valid options are: ${keys.join(", ")}`,
+    };
+
+  var results = perks.filter((perk) => {
+    return (
+      perk.rating >= ratingMap[rating][0] && perk.rating < ratingMap[rating][1]
+    );
+  });
+
+  if (results.length == 0) return [];
+  return results;
+}
+
+function handleCharacter(character) {
+  character = character.toLowerCase().replace(/[^a-z]/g, "");
+
+  if (character.length == 0) return { error: "character must not be empty" };
+  if (character.length < 3 || character.length > 20)
+    return { error: "character must be between 3 and 20 chars long" };
+
+  var results = perks.filter(
+    (p) => p.name.toLowerCase().indexOf(character) > -1
+  );
+
+  return results;
+}
+
+function handleQuery(query) {
+  query = query.toLowerCase().replace(/[^a-z]/g, "");
+
+  if (query.length == 0) return { error: "query must not be empty" };
+  if (query.length < 3 || query.length > 20)
+    return { error: "query must be between 3 and 20 chars long" };
+
+  var results = perks.filter(
+    (p) => p.perk_name.toLowerCase().indexOf(query) > -1
+  );
+
+  return results;
+}
+
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`);
+});
