@@ -41,7 +41,7 @@ app.get("/api/maps", (req, res) => {
     var mapName = params.get("map");
     if (mapName != null) return res.send(handleMap(mapName));
 
-    return res.json(maps);
+    return res.json(regions);
 });
 
 app.get("/api/region", (req, res) => {
@@ -51,7 +51,7 @@ app.get("/api/region", (req, res) => {
     var regionName = params.get("region");
     if (regionName != null) return res.send(handleRegion(regionName));
 
-    return res.json(maps);
+    return res.json(regions);
 });
 
 app.get("*", (req, res) => {
@@ -66,7 +66,7 @@ function handleMap(query) {
 
     var res = [];
     for (var region of regions) {
-        for (var map of region.maps) { 
+        for (var map of region.maps) {
             if (map.name.toLowerCase().replace(/[^a-z]/g, "").indexOf(query)) {
                 res.push(map);
             }
