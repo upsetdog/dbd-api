@@ -359,42 +359,42 @@
   },
   {
     "name": "Nancy Wheeler",
-    "perk_name": "Better Together",
+    "perk_name": "Situational Awareness",
     "description": "You seek justice and uncover the truth no matter what obstacle stands in your way. While repairing a Generator, its Aura is revealed in yellow to all other Survivors located within 32 metres. If the Killer downs a Survivor while you are repairing a Generator, you see the Auras of all other Survivors for 8/9/10 seconds.",
     "rating": 3.06,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_BetterTogether.png"
   },
   {
     "name": "Nancy Wheeler",
-    "perk_name": "Fixated",
+    "perk_name": "Self-Aware",
     "description": "When you have a goal in mind, there is no turning back; better to ask forgiveness than permission. You walk 10/15/20 % faster and can see your own Scratch Marks.",
     "rating": 4.01,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_Fixated.png"
   },
   {
     "name": "Nancy Wheeler",
-    "perk_name": "Inner Strength",
+    "perk_name": "Inner Healing",
     "description": "You look inwards and trust your instincts when you feel lost and alone. Each time you cleanse a Totem, Inner Strength activates: You are automatically healed 1 Health State when hiding inside a Locker for 10/9/8 seconds while injured or suffering from the Deep Wound Status Effect. Inner Strength does not activate if you currently suffer from the Broken Status Effect.",
     "rating": 4.12,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_InnerStrength.png"
   },
   {
     "name": "Steven Harrington",
-    "perk_name": "Babysitter",
+    "perk_name": "Guardian",
     "description": "While you have a reputation for being self-centred, you risk it all to help those in need. When you unhook a Survivor, the rescued Survivor will leave neither Scratch Marks nor Pools of Blood for the next 4/6/8 seconds. Both you and the Killer see each other's Aura for 4 seconds.",
     "rating": 2.2,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_Babysitter.png"
   },
   {
     "name": "Steven Harrington",
-    "perk_name": "Camaraderie",
+    "perk_name": "Kinship",
     "description": "Life has taught you the importance of friendship which has given you strength. While you are on the Hook in the Struggle Phase, Camaraderie activates. If another Survivor is within 16 metres of your Hook while Camaraderie is active, the Struggle Phase timer is paused for 26/30/34 seconds.",
     "rating": 3.14,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_Camaraderie.png"
   },
   {
     "name": "Steven Harrington",
-    "perk_name": "Second Wind",
+    "perk_name": "Renewal",
     "description": "You have learnt to avoid awkward situations with parents. Part of you still thinks your best option is to run away and hope things will take care of themselves. When you heal another Survivor for the equivalent of 1 Health State, Second Wind activates: The next time you are unhooked or unhook yourself, you suffer from the Broken Status Effect until Second Wind deactivates. You are automatically healed 1 Health State after 28/24/20 seconds. While Second Wind is active, the following conditions will deactivate it: Successfully being healed by Second Wind. Being put into the Dying State before the timer elapses. Second Wind does not activate if you already suffer from the Broken Status Effect.",
     "rating": 3.45,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_SecondWind.png"
@@ -877,7 +877,7 @@
   },
   {
     "name": "Demogorgon",
-    "perk_name": "Mindbreaker",
+    "perk_name": "Fearmonger",
     "description": "Your distressing presence drains and weakens your prey. While repairing Generators, Survivors are afflicted by the Exhausted Status Effect. Any existing Exhaustion timers are paused while the Survivor is repairing a Generator. After ending the Repair action, the Survivor is afflicted by the Exhausted Status Effect for 3/4/5 seconds.",
     "rating": 2.7,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_Mindbreaker.png"
@@ -926,7 +926,7 @@
   },
   {
     "name": "Demogorgon",
-    "perk_name": "Cruel Limits",
+    "perk_name": "Claustrophobia",
     "description": "Your ties to the otherworldly manifest when your prey attempts to get away. Each time a Generator is repaired, all Windows and vault locations within a radius of 32 metres from the completed Generator are blocked for all Survivors for the next 20/25/30 seconds.",
     "rating": 2.37,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_CruelLimits.png"
@@ -1045,7 +1045,7 @@
   },
   {
     "name": "Demogorgon",
-    "perk_name": "Surge",
+    "perk_name": "Jolt",
     "description": "Your eerie presence charges the air and interferes with technology. Putting a Survivor into the Dying State with a Basic Attack causes all Generators within a radius of 32 metres to instantly explode and regress. Surge applies an immediate Regression penalty of 8 %. Surge can only be triggered once every 40 seconds.",
     "rating": 4.41,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_Surge.png"
