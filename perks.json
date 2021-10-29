@@ -164,7 +164,7 @@
   {
     "name": "Laurie Strode",
     "perk_name": "Decisive Strike",
-    "description": "Using whatever is at hand, you stab at your aggressor in an ultimate attempt to escape. After being unhooked or unhooking yourself, Decisive Strike activates for the next 40/50/60 seconds: When being grabbed or picked up by the Killer, succeed a Skill Check IconHelp skillChecks.png to automatically escape their grasp, stunning them for 5 seconds. Successfully stunning the Killer will disable Decisive Strike for the remainder of the Trial and result in you becoming the Obsession.  While Decisive Strike is active, the following interactions will deactivate it: Repairing a Generator IconHelpLoading generators.png. Healing yourself or other Survivors. Cleansing a Totem IconHelpLoading totem.png. Sabotaging a Hook IconHelpLoading hook.png. Unhooking other Survivors.  Increases the odds of being the Obsession. The Killer can only be obsessed with one Survivor at a time.",
+    "description": "Using whatever is at hand, you stab at your aggressor in an ultimate attempt to escape. After being unhooked or unhooking yourself, Decisive Strike activates for the next 40/50/60 seconds: When being grabbed or picked up by the Killer, succeed a Skill Check to automatically escape their grasp, stunning them for 5 seconds. Successfully stunning the Killer will disable Decisive Strike for the remainder of the Trial and result in you becoming the Obsession.  While Decisive Strike is active, the following interactions will deactivate it: Repairing a Generator IconHelpLoading generators.png. Healing yourself or other Survivors. Cleansing a Totem IconHelpLoading totem.png. Sabotaging a Hook IconHelpLoading hook.png. Unhooking other Survivors.  Increases the odds of being the Obsession. The Killer can only be obsessed with one Survivor at a time.",
     "rating": 4.07,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_DecisiveStrike.png"
   },
@@ -570,21 +570,21 @@
   {
     "name": "Mikaela Reid",
     "perk_name": "Clairvoyance",
-    "description": "There is an intrinsic energy in you that sees beyond your vision. Whenever you cleanse a Totem IconHelpLoading totem.png, Clairvoyance activates:When empty-handed, press and hold the Active Ability button to unlock your full Aura-reading potential, allowing you to see the Auras IconHelp auras.png of the Exit Gate Switches IconHelp exitGates.png, Generators IconHelpLoading generators.png, Hooks IconHelpLoading hook.png, and Chests IconHelp chests.png within 64 metres for 8/9/10 seconds.",
+    "description": "There is an intrinsic energy in you that sees beyond your vision. Whenever you cleanse a Totem, Clairvoyance activates:When empty-handed, press and hold the Active Ability button to unlock your full Aura-reading potential, allowing you to see the Auras of the Exit Gate Switches, Generators, Hooks, and Chests within 64 metres for 8/9/10 seconds.",
     "rating": 3.50,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_Clairvoyance.png"
   },
    {
     "name": "Mikaela Reid",
     "perk_name": "Boon: Circle of Healing",
-    "description": "A Boon that offers comfort amidst the terror. Press and hold the Active Ability button near a Dull or Hex Totem to bless it and create a Boon Totem IconHelpLoading totem.png. Soft chimes ring out within a radius of 28 metres. Survivors inside the Boon Totem's range benefit from the following effects: 90/95/100 % bonus to all Healing Speeds. Unlocks the Self-Care ability, allowing to self-heal without needing a Med-Kit IconItems firstAidKit.png at 50 % of the normal Healing speed. Also benefits from the Healing Speed bonus, boosting the Self-Healing speed to 95/97.5/100 %. You can only bless one Totem at a time. All equipped Boon Perks are active on the Same Boon Totem.",
+    "description": "A Boon that offers comfort amidst the terror. Press and hold the Active Ability button near a Dull or Hex Totem to bless it and create a Boon Totem. Soft chimes ring out within a radius of 28 metres. Survivors inside the Boon Totem's range benefit from the following effects: 90/95/100 % bonus to all Healing Speeds. Unlocks the Self-Care ability, allowing to self-heal without needing a Med-Kit at 50 % of the normal Healing speed. Also benefits from the Healing Speed bonus, boosting the Self-Healing speed to 95/97.5/100 %. You can only bless one Totem at a time. All equipped Boon Perks are active on the Same Boon Totem.",
     "rating": 4.25,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_BoonCircleOfHealing.png"
   },
    {
     "name": "Mikaela Reid",
     "perk_name": "Boon: Shadow Step",
-    "description": "A Boon that conceals the truth. Press and hold the Active Ability button near a Dull or Hex Totem to bless it and create a Boon Totem IconHelpLoading totem.png. Soft chimes ring out within a radius of 28 metres. Survivors inside the Boon Totem's range benefit from the following effects: Scratch Marks IconHelp scratchMarks.png are suppressed. Auras IconHelp auras.png are hidden from The Killer. Both effects linger for 2/3/4 seconds after leaving the Boon Totem's range. You can only bless one Totem at a time. All equipped Boon Perks are active on the Same Boon Totem.",
+    "description": "A Boon that conceals the truth. Press and hold the Active Ability button near a Dull or Hex Totem to bless it and create a Boon Totem IconHelpLoading totem.png. Soft chimes ring out within a radius of 28 metres. Survivors inside the Boon Totem's range benefit from the following effects: Scratch Marks are suppressed. Auras are hidden from The Killer. Both effects linger for 2/3/4 seconds after leaving the Boon Totem's range. You can only bless one Totem at a time. All equipped Boon Perks are active on the Same Boon Totem.",
     "rating": 4.00,
     "icon_url": "https://github.com/upsetdog/dbd-assets/raw/main/icons/iconPerks_BoonShadowStep.png"
   },
